@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const Favorite = require('../models/favorite');
+const Favorite = require('../models/favorites');
 const authenticate = require('../authenticate');
 const cors = require('./cors');
 
@@ -149,3 +149,4 @@ favoriteRouter.route(':campsiteId')
     });
 
 module.exports = favoriteRouter;
+
